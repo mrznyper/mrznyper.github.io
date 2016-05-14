@@ -49,7 +49,6 @@
 		</p>
 		<p>
 		&emsp;In my individual project, I will compare Japan's stock exchange with its international peers to show the rapid growth and subsequent collapse. To highlight their demographic woes, I used census data from Japan and other major countries.
-		My visualization is done primarily with Bokeh to graph and show the economic and demographic trends. Moving average is used to remove some noise in the data from the different exchanges.
 		</p>
 		<hr>
 		
@@ -66,7 +65,7 @@
         </script>
 		
 		<p>
- &emsp;content block		</p>
+ &emsp;Starting in 1986 Japan was swept in a massive influx of money into its real estate market and the Nikkei 225, its primary stock exchange. As we can see in the chart’s percentage change, Japan’s Nikkei rallied at a time in which United Kingdom’s FTSE, China’s Hanseng, and the United State’s S&P 500 experience slow growth. Right before 1990, we see Japan’s stock market began its collapse. The index plummeted right up to the dot-com boom. As a tech savvy country, the explosion in online commerce brought hopes of economic recovery. We now know the dot-com boom was a bubble. Since then, Japan’s Nikkei been trading at a higher level of volatility than its peers, and the economy has significantly underperformed. Since the asset bubble collapse, wages in Japan have fallen 5% [1]</p>
 		
 		<h1>Demographic Woes</h1>
         <div class="plotdiv" id="6649debc-e70a-48ca-a523-ce0906a9ec09"></div>
@@ -82,8 +81,10 @@
 
 		
 		<p>
- &emsp;content block		</p>
-		<div class="plotdiv" id="6b353f21-acbf-4a9e-a92a-3264b8e3c821"></div>
+ &emsp;As countries become wealthier, their population growth decreases. We can see this very clearly with China’s slowly population growth, and an overall decrease in population growth across the board. However, Japan is still an outlier in this regard. It’s percent population change is significantly lower than its international peers. Typically this wouldn’t be an issue for Japan. It is a tiny country with very crowded cities.[2] Less people would simply mean more comfortable society. The problem lies in the makeup of the population, or how old the Japanese are in comparison to the US, UK, and China.
+
+ 
+ <div class="plotdiv" id="6b353f21-acbf-4a9e-a92a-3264b8e3c821"></div>
         
         <script type="text/javascript">
             Bokeh.$(function() {
@@ -93,21 +94,43 @@
             Bokeh.embed.embed_items(docs_json, render_items);
         });
         </script>
-
+		<p>
+		The quickest way to peek in a country’s population composition is by looking at the median age of its citizens. Again, we see Japan is an outlier when compared to the US, UK and China. Its median age is significantly higher than the other countries. This is due to abysmal birthrates and excellent healthcare for the elderly. Pulling up the median age are the older Japanese citizens, which outlive their western counterparts.[3]
+		</p>
 		
 		<h1>The Link</h1>
-        <blockquote>
-        
-		
-        </blockquote>
 		
 		<p>
- &emsp;content block		</p>
+ &emsp;Very loose economic policy caused the economic collapse, it is being tightened now to try and whip the country back into shape.[4] Yet, it’s still worth looking Japan’s population and how much it differs from other wealthy nations. So why is their population a problem? Simply put, old people are counterproductive in an economy. An elderly population puts a massive burden on welfare and retirement programs. Prolonging these issues are the higher life expectancy of the older Japanese population, and declining birth rates. This mean no youth entering the workforce, and many old people still need to be cared for.</p>
+ 
+ <hr>
+ <h1>Techniques and Code</h1>		
+		<p>
+ &emsp;All the code was written in Python 2.7. My visualization is done primarily with Bokeh to graph and show the economic and demographic trends.
+			A running average  is used to remove some noise in the data from the different exchanges.
+			The exchange data was also normalized by taking the first closing price and comparing that as a percentage to each closing price thereafter.
+	</p>
+	<p>
+	 &emsp;<a href="https://github.com/mrznyper/CMP464-DataScience/blob/master/projectCode.py">Link to Code</a>
+	</p>
+ 
+ 
+ 
+ <h1>Data Sources</h1>
+		<ul>
+		<li><a href="http://finance.yahoo.com/">Historical Exchange Data- Yahoo Finance</a>
+		<li><a href="http://www.worldometers.info/">Historical Demographic Data- Worldometers</a>
+		</ul>
+ 
+ <h1>Citations</h1>
+		<ol>
+		<li><a href="http://www.economist.com/news/finance-and-economics/21573133-shinzo-abe-wakes-up-political-risk-higher-prices-without-higher">Economist- Shinzo Abe Wakes up to Higher Prices</a>
+		<li><a href="https://www.sbp-journal.com/index.php/sbp/article/view/666">SBP Journal- Crowding and Behavior in Japanese Public Spaces</a>
+		<li><a href="http://www.nytimes.com/2012/01/08/opinion/sunday/the-true-story-of-japans-economic-success.html?ref=opinion&pagewanted=all--">NY Times- Myth of Japan's Failure</a>
+		<li><a href="http://www.reuters.com/article/japan-economy-estimate-idUSL4E8JH1TC20120817">Reuters- Japan eyes end to decades long deflation</a>
+		</ol>
 	  
       </div>
-      
-      
-      
       <hr>
       <div id="footer">
       <p>Marlon Figueroa, 2016 - <a href="mailto:marlonfigueroa@outlook.com">Email</a></p>
