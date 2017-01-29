@@ -32,13 +32,11 @@
   background: url(images/logo.png) 50% no-repeat;
   background-size: cover;
   height: 150px;
-  width: 150px;
   margin: auto auto 10px;
 }
 
 .is-compact .portfolio-logo {
   height: 50px;
-  width: 50px;
   margin-top: 7px;
 }
 
@@ -168,3 +166,18 @@ footer {
   background-size: cover;
 }
 
+.card-image.mdl-card {
+  width: 256px;
+  height: 256px;
+  background: url(images/example-blog03.jpg) center / cover;
+}
+.card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.card-image__label{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
