@@ -1,72 +1,396 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <title>Marlon Figueroa</title>
-  <meta name="description" content="Marlon Figueroa">
-  <meta name="author" content="MrZnyper">
-  <link rel="shortcut icon" href="images/icon.png" />
-  <link rel="stylesheet" href="css/style.css">
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
-  
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Website for software engineer Marlon Figueroa.">
+    <meta name="author" content="Marlon Figueroa">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
 
-  ga('create', 'UA-20508661-1', 'mrznyper.github.io');
-  ga('send', 'pageview');
+    <title>Software Engineering by Marlon Figueroa</title>
 
-</script>
-  
-</head>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-<body>
-  <div id="container">
-    
-      <div id="title">Marlon Figueroa</div>
-      <badge>
-        <img src="images/dp.png"></img>
-      </badge>
-      <nav>
-      	<a href="index.html"> Main</a>
-      	<a href="about.html">About</a>
-      	<a href="resume.html">Resume</a>
-		<a href="http://stockcookie.com" target="_blank">
-			<img style src="images/cookie.png" style="max-width:100%; max-height:100%;"></img>
-		</a>
-		<!--
-      	<a href="links.html">Links</a>
-      	<a href="blog.html">Opinions</a>
-        <a href="updates.html">News</a>
-		-->
-      </nav>
-    <div style="clear:both;"></div>
-    
-    
-    
-      <div class="post">
-      <p>
-        <h1>Welcome!</h1>
-        <!--&emsp;This my website. There's still much more to add, so please return soon for more.-->
-		Marlon is a recent graduate from Lehman College where he earned a B.Sc. degree in Computer Science.
-		At Lehman, Marlon was an honors <a target="_blank" href="http://www.lehman.edu/undergraduate-bulletin/thelehmanscholarsprogram_0.htm">Scholars Program</a> student and an undergraduate researcher for multiple professors at the Research Foundation and Graduate Center of CUNY.
-		<blockquote>
-		Through internships in finance and computational biology, Marlon has experience focused on the visualization and statistical analysis of large data sets.
-        </blockquote>
-		Marlon graduated in May, 2017 with honors designation and was elected for a lifetime membership into <a target="_blank" href="https://www.pbk.org/web/">Phi Beta Kappa</a>, the oldest and most prestigious honors society in the nation.
-        Marlon is located right outside of New York City- If you would like to contact him, send him an email through the link below.
-      </p>
-      </div>
-      
-      
-      
-      <hr>
-      <div id="footer">
-      <p>Marlon Figueroa, <a href="mailto:marlonfigueroa@outlook.com">Email</a></p>
-      </div>
-  </div>
-</body>
-</html>
+    <!-- Because no website is complete without analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-20508661-1', 'mrznyper.github.io');
+    ga('send', 'pageview');
+
+    </script>
+  </head>
+  <body>
+    <main role="main">
+
+      <!--
+        Caught you snooping on my site's code!
+
+        The
+        Everything is in rows and sub-rows to keep fixed heights across varied lenght content.
+      -->
+
+      <div class="container ">
+        <br>
+        <br>
+        <!--
+          START OF Introductory Row
+
+          Name, Title, Description, Resume Expand/Collapse
+        -->
+        <div class="row">
+          <div class="col-12">
+            <h1 class="heading text-center">Marlon Figueroa </h1>
+            <hr class="divider">
+            <p class="lead text-center">
+              <span class="text-muted">Full Stack Software Engineer</span>
+            </p>
+            <p>
+              Experienced in writing software for Cloud, Web, Desktop, and Mobile.
+              Currently working in financial services at JPMorgan Chase & Co. but previously worked in writing software for research scientists at the New York Museum of Natural History.
+            </p>
+            <span class="text-muted">
+              <em>
+                <a href="resume.pdf">Full PDF resume.</a>
+              </em>
+            </span>
+          </div>
+        </div>
+        <!--
+          END OF Introductory Row
+        -->
+        <br>
+        <!--
+          START OF Work Experience row
+
+          Logo of the company, the job title and a short description of the role.
+        -->
+        <h2 class="text-center text-muted">Experience</h2>
+        <hr class="divider">
+        <div class="row">
+          <div class="col-6">
+            <div class="col-8">
+                <img class="img-fluid" src="logos/chase.png" alt="Chase Logo">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="col-8">
+              <img class="img-fluid" src="logos/jpmorgan.png" alt="JPMorgan Logo">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <h3 class="heading">Architect</h3>
+          </div>
+          <div class="col-6">
+            <h3 class="heading">Cloud Dev</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <p class="lead">
+              <span class="text-muted">Digital Wealth Management</span>
+            </p>
+          </div>
+          <div class="col-6">
+            <p class="lead">
+              <span class="text-muted">Risk Forecasting Solutions</span>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <p>
+              Providing system design and architecture guidance on Chase.com with a focus on You Invest, a new investing platform.
+            </p>
+          </div>
+          <div class="col-6">
+            <p>
+              Wrote web applications using cloud web services and React for internal clients. Helped re-architect established applications to be cloud friendly.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <span class="text-muted">
+              <em>
+              Ensuring best practices are followed to guarantee a great user experience.
+              </em>
+            </span>
+          </div>
+          <div class="col-6">
+            <span class="text-muted">
+              <em>
+              Java, React, Node.js, Springboot, Gaia / Cloud Foundry, Unix, SQL
+              </em>
+            </span>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-4">
+            <div class="col-10">
+              <img class="img-fluid" src="logos/jpmorgan.png" alt="JPMorgan Logo">
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="col-10">
+              <img class="img-fluid" src="logos/rf.png" alt="CUNY Research Foundation Logo">
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="col-10">
+              <img class="img-fluid" src="logos/gc.png" alt="CUNY Graduate Center Logo">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <h5 class="heading">Python Dev</h5>
+          </div>
+          <div class="col-4">
+            <h5 class="heading">Java Dev</h5>
+          </div>
+          <div class="col-4">
+            <h5 class="heading">Web Dev</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <p class="lead">
+              <span class="text-muted">
+                Risk Finance Technology
+              </span>
+            </p>
+          </div>
+          <div class="col-4">
+            <p class="lead">
+              <span class="text-muted">
+                Evolutionary Biology, Medical Imaging
+              </span>
+            </p>
+          </div>
+          <div class="col-4">
+            <p class="lead">
+              <span class="text-muted">
+                Applied Theoretical Computer Science
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            Developed a new screen in a capital management desktop app for risk users to view and attest to positions of the whole firm.
+          </div>
+          <div class="col-4">
+            Designed and developed a desktop app to load and examine tree-structured data for the benefit of researchers at the Museum of Natural History.
+          </div>
+          <div class="col-4">
+            Developed a web app showcase NP-Optimization problems and wrote a pipeline to import freely available content from unmaintained sites.
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <span class="text-muted">
+              <em>
+                Python, Enaml, Athena
+              </em>
+            </span>
+          </div>
+          <div class="col-4">
+            <span class="text-muted">
+              <em>
+                Java, JavaFX, Python, UI/UX
+              </em>
+            </span>
+          </div>
+          <div class="col-4">
+            <span class="text-muted">
+              <em>
+                Python, Google App Engine
+              </em>
+            </span>
+          </div>
+        </div>
+        <!--
+          END OF Work Experience
+        -->
+        <br>
+        <!--
+          START OF Certificates and Awards
+
+          Logo of the awarding organization, the certificate/award with description.
+        -->
+        <h2 class="text-center text-muted">Certificates and Awards</h2>
+        <hr class="divider">
+        <div class="row">
+          <div class="col-8">
+            <h2 class="heading">Computer Science with Android</h2>
+            <p class="lead">
+              <span class="text-muted">
+                Google
+              </span>
+            </p>
+          </div>
+          <div class="col-4">
+            <div class="container">
+              <img class="img-fluid" src="logos/google.svg">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p>
+              One of select chosen to participate in an <b>in-person pilot</b> of Google's computer science curriculum.
+              Weekly workshops were taught by Google Engineers and focused on data structures, algorithms and Android development.
+              Developed multiple apps using Android Studio and the platform's best practices.
+            </p>
+            <span class="text-muted">
+              <em>
+                Certified November, 2015
+              </em>
+            </span>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-8">
+            <h2 class="heading">Computing Medal</h2>
+            <p class="lead">
+              <span class="text-muted">
+                Rochester Institute of Technology
+              </span>
+            </p>
+          </div>
+          <div class="col-4">
+            <div class="container">
+              <img class="img-fluid centered" src="logos/rit.svg">
+            </div>
+          </div>
+          <hr class="divider">
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p>
+              Awarded in recognition of founding and leading Bedford Central School District's first Computer Science student program.
+              Award received two years in a row in recognition of my active participation and leadership in various Computer Science programs.
+              Lead the Robotics club as an officer and leader of multiple teams, and successfully founding and promoting a Computer Science student program.
+            </p>
+            <span class="text-muted">
+              <em>
+                Awarded September, 2013
+              </em>
+            </span>
+          </div>
+        </div>
+        <!--
+          END OF Certificates and Awards-
+        -->
+        <br>
+        <!--
+          START OF Education
+
+          Lehman+PBK Logos and description of scholarships received in my undergraduate years.
+        -->
+        <h2 class="text-center text-muted">Education</h2>
+        <hr class="divider">
+        <div class="row">
+          <div class="col-7">
+            <h2 class="heading">Computer Science</h2>
+            <p class="lead">
+              <span class="text-muted">
+                Bachelor of Science
+              </span>
+            </p>
+            <span class="text-muted">
+              <em>
+                Graduated in Spring, 2017
+              </em>
+            </span>
+          </div>
+          <div class="col-5">
+            <br>
+            <br>
+            <img class="img-fluid" src="logos/lehman.png">
+          </div>
+          <hr class="divider">
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-12">
+            <h4 class="heading">Phi Beta Kappa</h4>
+            <p class="lead">
+              <span class="text-muted">
+                Honor Society est. 1776
+              </span>
+            </p>
+            <p>
+              Member of the nation’s oldest and most prestigious academic honor society, Phi Beta Kappa, founded in 1776. Granted lifelong membership through a highly selective, merit-based invitation process that took into consideration my undergraduate academic success and breadth of study.
+            </p>
+            <span class="text-muted">
+              <em>
+                Inducted May, 2017
+              </em>
+            </span>
+          </div>
+          <hr class="divider">
+        </div>
+
+        <br>
+        <div class="row">
+          <div class="col-12">
+            <h4 class="heading">Theoretical and Computational Science Scholarship</h4>
+            <p class="lead">
+              <span class="text-muted">
+                Center for Theoretical and Computational Sciences
+              </span>
+            </p>
+            <p>
+              Scholarship awarded in recognition of my undergraduate research with multiple professors. My research spanned the fields of computational biology, computational complexity theory, search and decision algorithms, random graph theory and machine learning.
+            </p>
+            <span class="text-muted">
+              <em>
+                Awarded May, 2017
+              </em>
+            </span>
+          </div>
+          <hr class="divider">
+        </div>
+
+        <br>
+        <div class="row">
+          <div class="col-12">
+            <h4 class="heading">Lehman Scholars Scholarship</h4>
+            <p class="lead">
+              <span class="text-muted">
+                Honors Program
+              </span>
+            </p>
+            <p>
+              Full scholarship and induction into honors program designed for outstanding and highly motivated students that offers advance courses, seminars, and individual mentoring.
+            </p>
+            <span class="text-muted">
+              <em>
+                Awarded September, 2013
+              </em>
+            </span>
+          </div>
+          <hr class="divider">
+        </div>
+
+        <!--
+            END OF Education
+        -->
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <hr class="divider">
+        <p>Marlon Figueroa · <a href="https://www.linkedin.com/in/figueroamarlon/">LinkedIn</a> · <a href="resume.pdf">Resume</a></p>
+      </footer>
+    </main>
